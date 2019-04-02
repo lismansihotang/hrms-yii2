@@ -1,0 +1,11 @@
+
+# .htaccess configuration
+# @author : lisman.sihotang(lisman.sihotang@gmail.com)
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Otherwise forward the request to index.php
+RewriteRule . index.php
+
+# .htaccess

@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Schema for database 'mii_payroll'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<style type="text/css">
+<!--
+.toptext {font-family: verdana; color: #000000; font-size: 20px; font-weight: 600; width:550;  background-color:#999999; }
+.normal {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; color: #000000}
+.fieldheader {font-family: verdana; color: #000000; font-size: 12px; font-weight: 600; width:550;  background-color:#c0c0c0; }
+.fieldcolumn {font-family: verdana; color: #000000; font-size: 10px; font-weight: 600; width:550;  background-color:#ffffff; }
+.header {background-color: #ECE9D8;}
+.headtext {font-family: verdana; color: #000000; font-size: 12; font-weight: 600; width:550;  background-color:#999999; }
+BR.page {page-break-after: always}
+//-->
+</style>
+</head>
+<body bgcolor='#ffffff' topmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tr>
+<td class="toptext"><p align="center">mii_payroll</td>
+</tr>
+</table>
+<a name="header">&nbsp</a><ul>
+	<li><a href="#absensi"><p class="normal">absensi</a></li>
+	<li><a href="#absensi_summary"><p class="normal">absensi_summary</a></li>
+	<li><a href="#bank"><p class="normal">bank</a></li>
+	<li><a href="#barang_inventaris"><p class="normal">barang_inventaris</a></li>
+	<li><a href="#checkinout"><p class="normal">checkinout</a></li>
+	<li><a href="#cuti"><p class="normal">cuti</a></li>
+	<li><a href="#cuti_detail"><p class="normal">cuti_detail</a></li>
+	<li><a href="#departments"><p class="normal">departments</a></li>
+	<li><a href="#dept"><p class="normal">dept</a></li>
+	<li><a href="#hubungan_keluarga"><p class="normal">hubungan_keluarga</a></li>
+	<li><a href="#informasi_pribadi"><p class="normal">informasi_pribadi</a></li>
+	<li><a href="#jabatan"><p class="normal">jabatan</a></li>
+	<li><a href="#jenis_identitas"><p class="normal">jenis_identitas</a></li>
+	<li><a href="#jenis_sanksi"><p class="normal">jenis_sanksi</a></li>
+	<li><a href="#kalender_kerja"><p class="normal">kalender_kerja</a></li>
+	<li><a href="#kalender_kerja_detail"><p class="normal">kalender_kerja_detail</a></li>
+	<li><a href="#karyawan"><p class="normal">karyawan</a></li>
+	<li><a href="#karyawan_absensi"><p class="normal">karyawan_absensi</a></li>
+	<li><a href="#karyawan_atasan"><p class="normal">karyawan_atasan</a></li>
+	<li><a href="#karyawan_dept"><p class="normal">karyawan_dept</a></li>
+	<li><a href="#karyawan_file"><p class="normal">karyawan_file</a></li>
+	<li><a href="#karyawan_finger_id"><p class="normal">karyawan_finger_id</a></li>
+	<li><a href="#karyawan_identitas"><p class="normal">karyawan_identitas</a></li>
+	<li><a href="#karyawan_inventaris"><p class="normal">karyawan_inventaris</a></li>
+	<li><a href="#karyawan_karir"><p class="normal">karyawan_karir</a></li>
+	<li><a href="#karyawan_keluarga"><p class="normal">karyawan_keluarga</a></li>
+	<li><a href="#karyawan_rekening"><p class="normal">karyawan_rekening</a></li>
+	<li><a href="#karyawan_sanksi"><p class="normal">karyawan_sanksi</a></li>
+	<li><a href="#karyawan_status"><p class="normal">karyawan_status</a></li>
+	<li><a href="#komponen_gaji"><p class="normal">komponen_gaji</a></li>
+	<li><a href="#komponen_gaji_karyawan"><p class="normal">komponen_gaji_karyawan</a></li>
+	<li><a href="#log_absensi"><p class="normal">log_absensi</a></li>
+	<li><a href="#m_status"><p class="normal">m_status</a></li>
+	<li><a href="#pekerjaan"><p class="normal">pekerjaan</a></li>
+	<li><a href="#pendidikan"><p class="normal">pendidikan</a></li>
+	<li><a href="#penggajian"><p class="normal">penggajian</a></li>
+	<li><a href="#penggajian_karyawan"><p class="normal">penggajian_karyawan</a></li>
+	<li><a href="#penggajian_karyawan_detail"><p class="normal">penggajian_karyawan_detail</a></li>
+	<li><a href="#penggajian_komponen"><p class="normal">penggajian_komponen</a></li>
+	<li><a href="#penghasilan"><p class="normal">penghasilan</a></li>
+	<li><a href="#perusahaan"><p class="normal">perusahaan</a></li>
+	<li><a href="#riwayat_pendidikan"><p class="normal">riwayat_pendidikan</a></li>
+	<li><a href="#shift"><p class="normal">shift</a></li>
+	<li><a href="#sys_user"><p class="normal">sys_user</a></li>
+	<li><a href="#tempat_pendidikan"><p class="normal">tempat_pendidikan</a></li>
+	<li><a href="#tipe_absensi"><p class="normal">tipe_absensi</a></li>
+	<li><a href="#tipe_cuti"><p class="normal">tipe_cuti</a></li>
+	<li><a href="#tipe_shift"><p class="normal">tipe_shift</a></li>
+	<li><a href="#userinfo"><p class="normal">userinfo</a></li>
+</ul>
+<br class=page>
+<p><a name='absensi'>&nbsp</a>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+	<td class="headtext" width="30%" align="left" valign="top">absensi</td>
+	<td>&nbsp</td>
+<tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+	<td class="fieldheader" width="100%" align="left" valign="top">Fields</td>
+</tr>
+</table>
+<table width="100%" cellspacing="0" cellapdding="2" border="1">
+<tr>

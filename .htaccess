@@ -1,0 +1,18 @@
+
+# .htaccess configuration
+# @author : lisman.sihotang(lisman.sihotang@gmail.com)
+
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+# if request dosn't start with web add it
+RewriteCond %{REQUEST_URI} !^/(web)
+RewriteRule (.*) /web/$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Otherwise forward the request to index.php
+RewriteRule . web/index.php 
+
+# .htaccess
